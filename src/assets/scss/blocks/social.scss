@@ -1,0 +1,17 @@
+
+.social {
+    &__link {
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+}
+.instagram {
+    background-image: url(../../assets/images/instagram.svg);
+}
+.vk {
+    background-image: url(../../assets/images/vk.svg);
+}
+.pinterest {
+    background-image: url(../../assets/images/pinterest.svg);
+}

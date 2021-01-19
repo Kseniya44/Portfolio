@@ -4,13 +4,21 @@
     {{> head }}
 </head>
 <body>
+    <div class="page">
+        <!-- header -->
+        {{> header }}
 
-    {{> header }}
-
-    {{> body }}
-
-    {{> footer }}
-
+        <!-- sidebar -->
+        {{> sidebar }}
+        
+        <!-- main -->
+        <main class="main">
+            <div class="container">
+                {{> body }}
+            </div>
+        </main>
+    </div>
+    <!-- js -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>

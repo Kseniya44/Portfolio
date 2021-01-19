@@ -1,0 +1,9 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $zindex10;
+    height: 30px;
+    background-color: lightgreen;
+    width: calc(100% - #{$width300});
+}
