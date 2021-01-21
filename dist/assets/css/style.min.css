@@ -326,8 +326,15 @@ textarea {
   right: 0;
   z-index: 10;
   height: 30px;
-  background-color: lightgreen;
-  width: calc(100% - 300px); }
+  background-color: #0d0d0d;
+  width: calc(100% - 300px);
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center; }
+  .header__right {
+    margin-left: auto; }
+  .header__left {
+    width: 100%; }
 
 .sidebar {
   position: fixed;
@@ -418,6 +425,80 @@ textarea {
 
 .pinterest {
   background-image: url(../../assets/images/pinterest.svg); }
+
+.nav__list {
+  display: flex;
+  height: 3rem;
+  align-items: center; }
+
+.nav__list_last {
+  margin-left: auto; }
+
+.nav__item {
+  padding: 0 1.5rem;
+  height: 100%;
+  transition: background-color .3s; }
+  .nav__item:hover {
+    background-color: #2A5FE7; }
+  .nav__item_has_sub-nav {
+    position: relative; }
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  vertical-align: middle;
+  font-size: 1.2rem; }
+  .nav__link_triangle:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+    border-top: 0.6rem solid #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem; }
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  background-color: #2A5FE7;
+  border-radius: 0 0 .5rem .5rem;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); }
+  .sub-nav .nav__item {
+    transition: background-color .3s;
+    padding: .6rem 3.7rem 0.6rem 1.2rem; }
+    .sub-nav .nav__item:hover {
+      background-color: #11389a; }
+  .sub-nav .nav__link {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    vertical-align: top; }
+
+.show-sub-nav {
+  display: block; }
+
+.search-form {
+  max-width: 21.2rem;
+  height: 3rem; }
+  .search-form__input {
+    background: #202020;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-indent: 2.1rem;
+    color: #fff;
+    font-family: inherit;
+    border: 1px solid transparent;
+    box-sizing: border-box; }
+    .search-form__input::placeholder {
+      color: rgba(255, 255, 255, 0.4); }
+    .search-form__input:focus {
+      border: 1px solid #2A5FE7; }
 
 html {
   font-size: 62.5%; }
