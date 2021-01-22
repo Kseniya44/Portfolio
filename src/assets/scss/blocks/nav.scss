@@ -47,6 +47,7 @@
     background-color: $primaryBtnColor;
     border-radius: 0 0 .5rem .5rem;
     box-shadow: 0 6px 8px rgba($textColorAlt, .2);
+    overflow: hidden;
     .nav__item {
         transition: background-color .3s;
         padding: .6rem 3.7rem 0.6rem 1.2rem;
