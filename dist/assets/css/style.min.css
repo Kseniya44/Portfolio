@@ -503,7 +503,9 @@ textarea {
 
 .news {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 44px;
+  margin-bottom: 30px; }
   .news__item {
     max-width: 140px;
     height: 195px;
@@ -514,7 +516,7 @@ textarea {
     display: flex;
     flex-direction: column;
     transition: background-image .9s ease-in-out;
-    box-shadow: 0 5px 15px rbga(#000, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     position: relative;
     cursor: pointer; }
     .news__item:before {
@@ -551,6 +553,57 @@ textarea {
     padding: 0 1.6rem 1.2rem 0;
     align-self: flex-end;
     z-index: 20; }
+
+.post {
+  box-shadow: 0 15px 25px rgba(18, 18, 18, 0.45);
+  background-color: #121212;
+  border-radius: 5px;
+  padding: 1.5rem 2rem; }
+  .post-form {
+    display: flex;
+    align-items: center; }
+    .post-form__container {
+      margin-left: auto; }
+    .post-form__textarea {
+      width: 70%;
+      background: transparent;
+      border: none;
+      resize: none;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 1.5rem;
+      height: 26px;
+      color: #D2D2D2; }
+      .post-form__textarea::placeholder {
+        color: #d2d2d2; }
+    .post-form__container {
+      display: flex; }
+    .post-form__label, .post-form__button {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #EBEBEB;
+      display: block;
+      cursor: pointer;
+      transition: background-color .3s; }
+    .post-form__input {
+      display: none; }
+    .post-form__label {
+      background-image: url(../../assets/images/photo.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-right: 1.5rem; }
+      .post-form__label:hover {
+        background-color: #d2d2d2; }
+    .post-form__button {
+      background: #2A5FE7;
+      background-image: url(../../assets/images/send.svg);
+      border: none;
+      background-repeat: no-repeat;
+      background-position: center center;
+      font-size: 0; }
+      .post-form__button:hover {
+        background-color: #1648c8; }
 
 html {
   font-size: 62.5%; }

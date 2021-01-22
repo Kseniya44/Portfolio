@@ -1,0 +1,66 @@
+.post {
+    box-shadow: 0 15px 25px rgba($secondaryColor, .45);
+    background-color: $secondaryColor;
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
+    
+    &-form {
+        display: flex;
+        align-items: center;
+        
+        &__container {
+            margin-left: auto;
+        }
+        
+        &__textarea {
+            width: 70%;
+            background: transparent;
+            border: none;
+            resize: none;
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 1.5rem;
+            height: 26px;
+            color: #D2D2D2;
+            &::placeholder {
+                color: #d2d2d2;
+            }
+        }
+        &__container {
+            display: flex;
+        }
+        &__label, &__button {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #EBEBEB;
+            display: block;
+            cursor: pointer;
+            transition: background-color .3s;
+        }
+        &__input {
+            display: none;
+        }
+        &__label {
+            background-image: url(../../assets/images/photo.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-right: 1.5rem;
+            &:hover {
+                background-color: darken(#EBEBEB, 10%);
+            }
+        }
+        &__button {
+            background: $primaryBtnColor;
+            background-image: url(../../assets/images/send.svg);        
+            border: none;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-size: 0;
+            &:hover {
+                background-color: darken($primaryBtnColor, 10%);
+            }
+        }
+    }
+}
+
