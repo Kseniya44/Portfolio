@@ -126,18 +126,91 @@
                 
                 <!-- add post -->
                 
-                <div class="post">
-                    <form action="#" method="post" class="post-form">
-                
-                        <textarea class="post-form__textarea" placeholder="Write something"></textarea>
-                
-                        <div class="post-form__container">
-                            <label for="post-form__file" class="post-form__label">
-                                <input class="post-form__input" id = "post-form__file" type="file" class="post-form__button"></input>
+                <div class="add-post">
+                    <form action="#" method="post" class="add-post-form">
+                        
+                        <textarea class="add-post-form__textarea" placeholder="Write something"></textarea>
+                        
+                        <div class="add-post-form__container">
+                            <label for="add-post-form__file" class="add-post-form__label">
+                                <input class="add-post-form__input" id = "add-post-form__file" type="file" class="post-form__button"></input>
                             </label>
-                            <input type="submit" class="post-form__button"></input>
+                            <input type="submit" class="add-post-form__button"></input>
                         </div>
                     </form>
+                </div>
+                
+                <!-- articles -->
+                
+                <div class="post">
+                    <div class="post__content">
+                        <p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, repellendus odit. Voluptatum fugiat veritatis porro laudantium harum, vero minima nobis rerum perferendis eligendi inventore dolorum.</p>
+                        <div class="post__footer">
+                            <time class="post__date">21.06.2020</time>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post__header">
+                        <img class="post__photo" src="assets/images/post1.jpg" alt="post">
+                    </div>
+                    <div class="post__content">
+                        <h3 class="post__title">Lorem ipsum dolor sit amet.</h3>
+                        <p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, repellendus odit. Voluptatum fugiat veritatis porro laudantium harum, vero minima nobis rerum perferendis eligendi inventore dolorum.</p>
+                        <div class="post__footer">
+                            <time class="post__date">21.06.2020</time>
+                            <span class="post__tag">lorem ipsum.</span>
+                            <a href="#" class="post__link">read</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post__content">
+                        <div class="post__header">
+                            <div class="embed">
+                                <iframe
+                                src="https://www.youtube.com/embed/oRJf8NGkxaI" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <h3 class="post__title">Lorem ipsum dolor sit amet.</h3>
+                        <p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, repellendus odit. Voluptatum fugiat veritatis porro laudantium harum, vero minima nobis rerum perferendis eligendi inventore dolorum.</p>
+                        <div class="post__footer">
+                            <time class="post__date">21.06.2020</time>
+                            <span class="post__tag">lorem ipsum.</span>
+                            <a href="#" class="post__link">read</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post__header">
+                        <img class="post__photo" src="assets/images/post3.jpg" alt="post">
+                    </div>
+                    <div class="post__content">
+                        <h3 class="post__title">Lorem ipsum dolor sit amet.</h3>
+                        <p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, repellendus odit. Voluptatum fugiat veritatis porro laudantium harum, vero minima nobis rerum perferendis eligendi inventore dolorum.</p>
+                        <div class="post__footer">
+                            <time class="post__date">21.06.2020</time>
+                            <span class="post__tag">lorem ipsum.</span>
+                            <a href="#" class="post__link">read</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="pagenation">
+                    <ul class="pagenation__list">
+                        <li class="pagenation__item"><a href="#" class="pagenation__link">&lt;</a></li>
+                        <li class="pagenation__item"><a href="#" class="pagenation__link">1</a></li>
+                        <li class="pagenation__item pagenation__item_active"><a href="#" class="pagenation__link ">2</a></li>
+                        <li class="pagenation__item"><a href="#" class="pagenation__link">3</a></li>
+                        <li class="pagenation__item"><a href="#" class="pagenation__link">&gt;</a></li>
+                    </ul>
                 </div>
             </div>
         </main>
